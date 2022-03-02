@@ -141,7 +141,7 @@ else
 temp=head;
 printf("Enter the location:");
 scanf("%d",&loc);
-for(i=0;i<loc;i++)
+for(i=1;i<loc-1;i++)
 {
 temp=temp->next;
 if(temp==NULL)
@@ -198,7 +198,7 @@ printf("\nNode deleted\n");
 else
 {
 ptr=head;
-if(ptr->next!=NULL)
+while(ptr->next!=NULL)
 {
 ptr=ptr->next;
 }
@@ -237,8 +237,7 @@ void display()
 {
 struct node *ptr;
 printf("\nPrinting values...\n");
-ptr=head;8
-
+ptr=head;
 while(ptr!=NULL)
 {
 printf("%d\n",ptr->data);
