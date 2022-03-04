@@ -18,13 +18,12 @@ void search();
 void main()
 {
 int choice=0;
-
 while(choice!=9)
 {
 printf("\n**********Main Menu**********\n");
 printf("\nChoose one option from the following list...\n");
 printf("\n=============================================\n");
-printf("\n 1.Insert at the beginning 2.Insert at the last\n3.Insert at any random location\n4.Delete from beginning\n5.Delete from last\n6.Delete the node after the given data\n7.Search\n8.Show\n9.Exit\n");
+printf("\n1.Insert at the beginning\n2.Insert at the last\n3.Insert at any random location\n4.Delete from beginning\n5.Delete from last\n6.Delete the node after the given data\n7.Search\n8.Show\n9.Exit\n");
 printf("\nEnter your choice:\n");
 scanf("\n%d",&choice);
 switch(choice)
@@ -60,7 +59,6 @@ default:
 printf("Please enter valid choice..");
 }
 }
-
 }
 void insertion_beginning()
 {
@@ -278,5 +276,3 @@ printf("\nItem not found\n");
 }
 }
 }
-
-
